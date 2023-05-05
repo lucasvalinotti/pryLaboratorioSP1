@@ -28,24 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
+            this.lblUsuario = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.cbModulo = new System.Windows.Forms.ComboBox();
             this.cmdCancelar = new System.Windows.Forms.Button();
             this.txtContrasena = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblContrasena = new System.Windows.Forms.Label();
+            this.lblModulo = new System.Windows.Forms.Label();
             this.cmdAceptar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // lblUsuario
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(32, 37);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Usuario";
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Location = new System.Drawing.Point(32, 37);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(43, 13);
+            this.lblUsuario.TabIndex = 0;
+            this.lblUsuario.Text = "Usuario";
             // 
             // txtUsuario
             // 
@@ -89,23 +90,23 @@
             this.txtContrasena.Size = new System.Drawing.Size(151, 20);
             this.txtContrasena.TabIndex = 4;
             // 
-            // label2
+            // lblContrasena
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(32, 80);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Contraseña";
+            this.lblContrasena.AutoSize = true;
+            this.lblContrasena.Location = new System.Drawing.Point(32, 80);
+            this.lblContrasena.Name = "lblContrasena";
+            this.lblContrasena.Size = new System.Drawing.Size(61, 13);
+            this.lblContrasena.TabIndex = 5;
+            this.lblContrasena.Text = "Contraseña";
             // 
-            // label3
+            // lblModulo
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(32, 131);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Módulo";
+            this.lblModulo.AutoSize = true;
+            this.lblModulo.Location = new System.Drawing.Point(32, 131);
+            this.lblModulo.Name = "lblModulo";
+            this.lblModulo.Size = new System.Drawing.Size(42, 13);
+            this.lblModulo.TabIndex = 6;
+            this.lblModulo.Text = "Módulo";
             // 
             // cmdAceptar
             // 
@@ -123,13 +124,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(445, 186);
             this.Controls.Add(this.cmdAceptar);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblModulo);
+            this.Controls.Add(this.lblContrasena);
             this.Controls.Add(this.txtContrasena);
             this.Controls.Add(this.cmdCancelar);
             this.Controls.Add(this.cbModulo);
             this.Controls.Add(this.txtUsuario);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblUsuario);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Log In";
@@ -140,13 +142,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.ComboBox cbModulo;
         private System.Windows.Forms.Button cmdCancelar;
         private System.Windows.Forms.TextBox txtContrasena;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblContrasena;
+        private System.Windows.Forms.Label lblModulo;
         private System.Windows.Forms.Button cmdAceptar;
     }
 }

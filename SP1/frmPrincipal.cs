@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SP1
 {
-    public partial class Form1 : Form
+    public partial class frmPrincipal : Form
     {
-        public Form1()
+        public frmPrincipal()
         {
             InitializeComponent();
         }
@@ -23,6 +23,11 @@ namespace SP1
             this.Hide();
             frmLogin.ShowDialog();
             this.Show();
+        }
+
+        private void cmdSignIn_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Funcionalidad no disponible por mantenimiento...");
         }
     }
 }
