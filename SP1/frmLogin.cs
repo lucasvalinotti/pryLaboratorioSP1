@@ -34,6 +34,7 @@ namespace SP1
                 case "Adm":
                     if (contrasena == "@1a" && (modulo == "ADM" || modulo == "COM" || modulo == "VTA"))
                     {
+                        errores = 0;
                         this.Hide();
                         bienvenida.ShowDialog();
                     }
@@ -46,6 +47,7 @@ namespace SP1
                 case "John":
                     if (contrasena == "*2b" && modulo == "SIST")
                     {
+                        errores = 0;
                         this.Hide();
                         bienvenida.ShowDialog();
                     }
@@ -58,6 +60,7 @@ namespace SP1
                 case "Ceci":
                     if (contrasena == "*@3c" && (modulo == "ADM" || modulo == "VTA"))
                     {
+                        errores = 0;
                         this.Hide();
                         bienvenida.ShowDialog();
                     }
@@ -70,6 +73,7 @@ namespace SP1
                 case "God":
                     if (contrasena == "*@#4d" && modulo != "" )
                     {
+                        errores = 0;
                         this.Hide();
                         bienvenida.ShowDialog();
                     }
